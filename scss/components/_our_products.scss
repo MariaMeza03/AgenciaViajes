@@ -1,0 +1,220 @@
+.our_products{
+    width: 100%;
+	position: relative;
+    overflow: hidden;
+    background-image: url("../img/fondo-galeria.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+
+    @media(min-width:1199px){
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../img/fondo-galeria_desktop.webp");
+        
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 10px;
+        gap: 30px;
+
+
+        @media(min-width: 768px){
+            grid-template-columns: repeat(1, 1fr);
+            padding: 50px 0px;
+        }
+    }
+
+
+    &__carousel{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        h1{
+            
+            color: $Bluish_Purple;
+            font-size: 30px;
+            text-align: end;
+            line-height: 32px;
+            font-family:  Yantramanav-Bold;
+            text-align: center;
+
+            @media(min-width:768px){ //*phone
+                font-size: 38px;
+                line-height:50px;
+                
+            }
+
+            @media(min-width:1199px){ //*table
+                font-size: 50px;
+                text-align: end;
+                
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+        }
+        
+        &__decoration{
+            padding: 15px  0;
+            @include flex-center-center;
+            gap: 20px;
+
+
+            @media(min-width:1199px){
+                position: relative;
+                right:8%;
+                @include flex-center-end;
+                padding: 30px  0;
+            }
+
+            &__controls{
+                @include flex-center-center;
+                gap: 10px;
+    
+                &--prev{
+                    @include flex-center-center;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    z-index: 2;
+                    border: 1px solid $black;
+            
+            
+                    svg{
+                        width: 30px;
+                        fill: $black;
+                        padding: 5px;
+                    }
+
+            
+                }
+            
+                &--next{
+                    @include flex-center-center;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    z-index: 2;
+                    border: 1px solid $black;
+            
+            
+                    svg{
+                        width: 35px;
+                        fill: $black;
+                        padding: 5px;
+                    }
+            
+                }
+
+                
+        
+            }
+
+        }
+
+        &__imagen{
+            height: auto;
+            padding: 0 5px;
+
+            @media(min-width:768px){
+                padding: 0 18px;
+            }
+
+            img{
+                border-radius: 15px;
+                width: auto;
+                height: 100%;
+            }
+
+        }
+
+        &__button{
+                position: relative;
+                bottom:  30px;
+                @include flex-center-center;
+                left:  33%;
+        
+                @media(max-width:1199px){
+                    width: 90%;
+                    margin: auto;
+                    left: 0;
+                }
+        
+                a{
+                    border: 2px solid $mikado_yellow;
+                    margin-top: 15px;
+                    background-color:$mikado_yellow;
+                    font-family:  Yantramanav-Bold;
+                    padding: 15px;
+                    color:$white;
+                    border-radius: 5px;
+                    text-align: center;
+        
+                    @media(min-width:300px){
+                        font-size: 16px;         
+                    }
+        
+                    @media(min-width:768px){
+                        padding: 15px 80px ;
+                        font-size: 18px;
+                        
+                    }
+        
+                    @media(min-width:1199px){
+                        margin-top: 30px;
+                    }
+         
+                }
+        
+                a:hover{
+                    background-color:$white ;
+                    color: $mikado_yellow;
+                    border: 2px solid $mikado_yellow;
+                }
+            }
+
+    }
+}
+
+.swiper_products{
+	width: 97%;
+	height: 500px;
+    
+
+		.swiper-slide{
+			width: 100% !important;
+			height: 375px;
+            @include flex-center-center;
+			
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+
+
+            @media(min-width:992px){
+				width:33.33% !important;
+
+			}
+
+			@media(min-width: 1300px){
+				width: 25% !important;
+			}
+
+		}
+
+}

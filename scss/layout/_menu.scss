@@ -1,0 +1,118 @@
+.menu{
+	width: 65%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+    left: -200%;
+	background-color: $black;
+	z-index: 100;
+	padding: 30px 5px;
+	transition: 0.3s;
+
+	&--active{
+		left: 0%;
+	}
+
+
+	.container{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__media{
+		display: flex;
+		gap:10px;
+		padding-bottom: 30px;
+
+		a{
+			width: 19px;
+			height: 19px;
+			
+		}
+
+		svg{
+			color: #f8e69d;
+		}
+
+	}
+
+	&__link{
+
+		a,button{
+			font-size: 12px;
+			color: $white;
+			text-transform: uppercase;
+			transition: 0.3s;
+		}
+
+		hr{
+			margin: 10px 0;
+			width: 100%;
+			border: 0.09px solid #F8E69D;
+		}
+
+		&__submenu{
+			padding: 10px;
+			display: none;
+			z-index: 200;
+
+			&--active{
+				@include flex-j-center;
+				flex-direction: column;
+			}
+		}
+
+		&--one{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+
+		&--two{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+
+		&--three{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+
+		&--four{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+
+		&--five{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+
+		&--six{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+
+		&--seven{
+			&:hover{
+				color: #F8E69D;
+			}
+			
+		}
+	}
+
+
+
+}

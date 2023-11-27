@@ -1,0 +1,150 @@
+.services{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 30px 0 30px 0;
+
+    @media(min-width:1199px){
+        padding: 60px 0 60px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;     
+    }
+
+    h1.title{
+        color: $mikado_yellow;
+        font-size: 20px;
+        font-family:  Yantramanav-Bold;
+        text-align: center;
+        
+        @media(min-width:768px){
+            font-size: 25px;
+        }
+
+        @media(min-width:1199px){
+            font-size: 30px;
+        }
+        
+        @media(min-width:1700px){
+            font-size: 35px;
+        }
+    }
+    p.subtitle{
+        padding-top: 15px;
+        color: $black;
+        font-size: 15px;
+        text-align: center;
+
+        @media(min-width: 1199px){
+            font-size: 18px;  
+        }
+    }
+
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding-top: 30px;
+        
+        @media(min-width: 750px){
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            
+        }
+
+        &__item{
+            @include flex-center-center;
+            flex-direction: column;
+            gap: 15px;
+
+            &__imagen{
+                width: auto;
+                height: 120px;
+                margin: auto;
+
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+
+                @media(min-width: 768px){
+                    @include flex-center-center;
+                    margin: 0;
+                }
+                
+                @media(min-width:1200px){
+                    height: 240px;
+                   
+                }
+            }
+        
+            &__text{
+                @include flex-center-center;
+                flex-direction:column;
+                gap: 15px;
+    
+                h1{
+                    color: $Bluish_Purple;
+                    font-size: 15px;
+                    text-align: center;
+                    font-family:  Yantramanav-Bold;
+
+            
+                    @media(min-width:1199px){
+                        font-size: 18px;
+                    }
+    
+                }
+            }
+        }
+    }
+
+    
+    &__button{
+
+        @include flex-center-center;
+
+        @media(max-width:1199px){
+            width: 90%;
+            margin: auto;
+        }
+
+        a{
+            border: 2px solid $mikado_yellow;
+            margin-top: 15px;
+            background-color:$mikado_yellow;
+            font-family:  Yantramanav-Bold;
+            padding: 15px;
+            color:$white;
+            border-radius: 5px;
+            text-align: center;
+
+            @media(min-width:300px){
+                font-size: 16px;         
+            }
+
+            @media(min-width:768px){
+                padding: 15px 80px ;
+                font-size: 18px;
+                
+            }
+
+            @media(min-width:1199px){
+                margin-top: 30px;
+            }
+ 
+        }
+
+        a:hover{
+            background-color:$white ;
+            color: $mikado_yellow;
+            border: 2px solid $mikado_yellow;
+        }
+    }
+
+    
+
+}

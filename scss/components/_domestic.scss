@@ -1,0 +1,163 @@
+.domestic{
+    width: 100%;
+	position: relative;
+	height: auto;
+    @include flex-center-center;
+    padding: 30px 0 30px 0;
+    background-image:url('../img/banner-contacto.webp');	
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+
+
+    @media(min-width:1199px){
+        height: auto;
+        padding: 60px 0 60px 0;
+    }
+
+    h1.title{
+        color: $mikado_yellow;
+        font-size: 20px;
+        font-family:  Yantramanav-Bold;
+        text-align: start;
+        
+        @media(min-width:768px){
+            font-size: 25px;
+        }
+
+        @media(min-width:1199px){
+            font-size: 30px;
+        }
+        
+        @media(min-width:1700px){
+            font-size: 35px;
+        }
+    }
+
+    &__form{
+        width: 100%;
+        padding-top: 30px;
+
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    
+            @media(min-width:1199px){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            p{
+                color: $white;
+                font-family:  Yantramanav-Bold;
+                font-size: 15px;
+                padding: 10px 0;
+    
+                @media(min-width: 1199px){
+                    font-size: 18px;
+                }
+            }
+
+            &__input{
+                @media(min-width:1199px){
+                    padding:7.5px 0;
+                }
+
+                label{
+                    color: $white;
+                    font-family:  Yantramanav-Bold;
+                    font-size: 15px;
+        
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                    }
+                }
+    
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    background-color: $white;
+                    border: none;
+                    border-radius: 10px;
+                    margin: 10px 0;
+                }
+                
+                textarea{
+                    height: 200px;
+                    padding: 15px;
+                    background-color: $white;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                }
+
+                &__button{
+                    width: 100%;
+                    @include flex-center-start;
+
+                    button{
+                        width: 60%;
+                        border: 2px solid $mikado_yellow;
+                        margin-top: 15px;
+                        background-color:$mikado_yellow;
+                        font-family:  Yantramanav-Bold;
+                        padding: 15px;
+                        color:$white;
+                        border-radius: 5px;
+                        text-align: center;
+            
+                        @media(min-width:300px){
+                            font-size: 16px;         
+                        }
+            
+                        @media(min-width:768px){
+                            padding: 15px 80px ;
+                            font-size: 18px;
+                            
+                        }
+            
+                        @media(min-width:1199px){
+                            margin-top: 30px;
+                        }
+             
+                    }
+            
+                    button:hover{
+                        background-color:$white ;
+                        color: $mikado_yellow;
+                        border: 2px solid $mikado_yellow;
+                }
+                }
+            }
+
+            &__check{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                &__check_input{
+                    @include flex-center-start;
+                    gap: 20px;
+                    label{
+                        color: $white;
+                        font-family:  Yantramanav-Bold;
+                        font-size: 15px;
+            
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+
+                    input{
+                       width: 30px;
+                       height: 30px;
+                    }
+
+                }
+            }
+    
+            
+        }
+    }
+
+
+} 

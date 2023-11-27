@@ -1,0 +1,117 @@
+.energia{
+    width: 100%;
+	height: auto;
+    padding: 30px 0 200px 0;
+    background-image:url('../img/fondo-paneles.webp');	
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+
+    @media(min-width: 1199px){
+        padding: 60px 0 300px 0; 
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+
+        @media(min-width: 1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+        }
+
+    }
+    
+    &__imagen{
+        margin: auto;
+        width: 70%;
+
+        @media(min-width: 1199px){
+            height:auto;
+        }
+
+    }
+
+    &__text{
+        @include flex-start-center;
+        flex-direction: column;
+        padding: 0 15px;
+
+        h1.title{
+            color: $Bluish_Purple;
+            font-size: 20px;
+            font-family:  Yantramanav-Bold;
+            padding-bottom: 15px;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+        p{
+            color: $black;
+            font-size: 15px;
+            text-align: center;
+    
+            @media(min-width: 1199px){
+                text-align: start;
+                font-size: 18px;  
+            }
+        }
+
+        &__button{
+
+            @include flex-center-center;
+    
+            @media(max-width:1199px){
+                width: 90%;
+                margin: auto;
+            }
+    
+            a{
+                border: 2px solid $mikado_yellow;
+                margin-top: 15px;
+                background-color:$mikado_yellow;
+                font-family:  Yantramanav-Bold;
+                padding: 15px;
+                color:$white;
+                border-radius: 5px;
+                text-align: center;
+    
+                @media(min-width:300px){
+                    font-size: 16px;         
+                }
+    
+                @media(min-width:768px){
+                    padding: 15px 80px ;
+                    font-size: 18px;
+                    
+                }
+    
+                @media(min-width:1199px){
+                    margin-top: 30px;
+                }
+     
+            }
+    
+            a:hover{
+                background-color:$white ;
+                color: $mikado_yellow;
+                border: 2px solid $mikado_yellow;
+            }
+        }
+       
+    }
+
+    
+}

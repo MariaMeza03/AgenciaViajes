@@ -1,0 +1,135 @@
+.hero{
+    width: 100%;
+	position: relative;
+    height: 800px;
+    @include flex-center-center;
+    background-image:url('../../img/banner-principal.webp');	
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;
+    }
+
+
+    &__text{
+        width: 100%;
+        @include flex-center-center;
+        flex-direction: column;
+        
+        h1{
+            color: $mikado_yellow;
+            font-size: 30px;
+            text-align: center;
+            line-height: 32px;
+            font-family:  Yantramanav-Bold;
+
+            @media(min-width:768px){ //*phone
+                font-size: 38px;
+                line-height:50px;
+            }
+
+            @media(min-width:1199px){ //*table
+                text-align: start;
+                font-size: 50px;
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+        }
+
+        p{
+            padding-top: 25px;
+            color: $white;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+                line-height: 32px;
+            }
+            @media(min-width:1199px){ //*table
+                text-align: start;
+            }
+        }
+
+        &__button{
+            @include flex-center-center;
+
+            @media(min-width:1199px){
+                @include flex-center-start;
+            }
+
+            a{
+                width: 100%;
+                border: 2px solid $mikado_yellow;
+                margin-top: 30px;
+                background-color:$mikado_yellow ;
+                font-family:  Yantramanav-Bold;
+                padding: 20px 30px ;
+                color:white;
+                font-size: 15px;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 5px;
+
+                @media(min-width:300px){
+                    font-size: 16px;         
+                }
+    
+                @media(min-width:768px){
+                    font-size: 18px;
+                    
+                }
+            }
+
+            a:hover{
+                background-color:$white ;
+                color: $mikado_yellow;
+                border: 2px solid $white
+            }
+        }
+    }
+
+    &__media{
+        position: absolute;
+        bottom: 0px;
+        background-image:url('../img/figura-fondo.png');	
+        background-size:contain;
+        background-position:center;
+        background-repeat: no-repeat; 
+        gap: 10px;
+        padding: 63px 200px 0 200px;
+        display: none;
+
+        @media(min-width: 1199px){
+           display: block;
+        } 
+
+
+        &__contet{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            position: relative;
+            top: -25px;
+       
+
+            a{
+                width: 40px;
+                height: 40px;
+                color: $white;
+               
+            }
+        }
+
+        
+    }
+
+
+} 
