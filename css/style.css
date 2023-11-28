@@ -416,7 +416,18 @@ mark,
 
 .img-fluid {
   max-width: 100%;
+  height: auto;
+  width: 100%;
   height: auto; }
+  @media (min-width: 768px) {
+    .img-fluid {
+      height: 180px; } }
+  @media (min-width: 1199px) {
+    .img-fluid {
+      height: 250px; } }
+  @media (min-width: 1400px) {
+    .img-fluid {
+      height: 300px; } }
 
 .img-thumbnail {
   padding: 0.25rem;
