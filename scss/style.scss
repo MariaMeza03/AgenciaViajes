@@ -139,8 +139,16 @@ h6,
     }
 }
 
+.bodas{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bodas.webp), no-repeat center center;
+}
+
+.contacto{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/contacto.webp), no-repeat center center;
+
+}
+
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
     background-size: cover;
 }
 
