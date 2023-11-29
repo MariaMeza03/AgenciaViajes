@@ -111,104 +111,62 @@
         <div class="container-fluid page-header contacto">
             <div class="container">
                 <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                    <h3 class="display-4 text-white text-uppercase">Bodas</h3>
+                    <h3 class="display-4 text-white text-uppercase">Contacto</h3>
                     <div class="d-inline-flex text-white">
                         <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
                         <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                        <p class="m-0 text-uppercase">Bodas</p>
+                        <p class="m-0 text-uppercase">Contacto</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Header End -->
-
-         <!-- Booking Start -->
-         <form class="container-fluid booking mt-5 pb-5">
-            <div class="container pb-5">
-                <div class="bg-light shadow" style="padding: 30px;">
-                    <div class="row align-items-center" style="min-height: 60px;">
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="mb-3 mb-md-0">
-                                        <select class="custom-select px-4" style="height: 47px;">
-                                            <option selected>Paquete</option>
-                                            <option value="Bodas">Bodas</option>
-                                            <option value="Cumpleaños">Cumpleaños</option>
-                                            <option value="+50">+50</option>
-                                            <option value="Lgbt">Lgbt</option>
-                                            <option value="XV">XV</option>
-                                            <option value="Mochileros">Mochileros</option>
-                                            <option value="Mujeres">Mujeres</option>
-                                            <option value="Teen">Teen</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="mb-3 mb-md-0">
-                                        <div class="date" id="date1" data-target-input="nearest">
-                                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de Salida" data-target="#date1" data-toggle="datetimepicker"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="mb-3 mb-md-0">
-                                        <div class="date" id="date2" data-target-input="nearest">
-                                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de Regreso" data-target="#date2" data-toggle="datetimepicker"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="mb-3 mb-md-0">
-                                        <select class="custom-select px-4" style="height: 47px;">
-                                            <option selected>Duración</option>
-                                            <option value="1 semana - 1 mes">1 semana - 1 mes</option>
-                                            <option value="1 mes - 6 meses">1 mes - 6 meses</option>
-                                            <option value="+6 meses">+6 meses</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Enviar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-        <!-- Booking End -->
    
-         <!-- About Start -->
+        <!-- Contact Start -->
         <div class="container-fluid py-5">
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-lg-6" style="min-height: 500px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pt-5 pb-lg-5">
-                        <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Bodas</h6>
-                            <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
-                            <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
-                            <div class="row mb-4">
-                                <div class="col-6">
-                                    <img class="img-fluid" src="img/about-1.jpg" alt="">
+            <div class="container py-5">
+                <div class="text-center mb-3 pb-3">
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
+                    <h1>Contactanos, tenemos un paquete ideal para ti</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form bg-white" style="padding: 30px;">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="form-row">
+                                    <div class="control-group col-sm-6">
+                                        <input type="text" class="form-control p-4" id="name" placeholder="Ingresa tu nombre"
+                                            required="required" data-validation-required-message="Ingresa tu nombre" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group col-sm-6">
+                                        <input type="email" class="form-control p-4" id="email" placeholder="Ingresa tu correo"
+                                            required="required" data-validation-required-message="Ingresa tu correo" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <img class="img-fluid" src="img/about-2.jpg" alt="">
+                                <div class="control-group">
+                                    <input type="text" class="form-control p-4" id="subject" placeholder="Objetivo"
+                                        required="required" data-validation-required-message="Ingresa tu objetivo" />
+                                    <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                            <a href="" class="btn btn-primary mt-1">Book Now</a>
+                                <div class="control-group">
+                                    <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Escribenos un mensaje para conocer más de ti"
+                                        required="required"
+                                        data-validation-required-message="Ingresa tu mensaje"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
-
+        <!-- Contact End -->
 
     </main>
 

@@ -398,7 +398,9 @@ mark,
       height: 250px; } }
   @media (min-width: 1400px) {
     .img-fluid {
-      height: 300px; } }
+      height: 280px; } }
+
+
 
 .img-thumbnail {
   padding: 0.25rem;
