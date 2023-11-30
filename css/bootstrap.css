@@ -398,9 +398,20 @@ mark,
       height: 250px; } }
   @media (min-width: 1400px) {
     .img-fluid {
-      height: 280px; } }
+      height: 270px; } }
 
-
+.img-home {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 768px) {
+    .img-home {
+      height: 180px; } }
+  @media (min-width: 1199px) {
+    .img-home {
+      height: 250px; } }
+  @media (min-width: 1400px) {
+    .img-home {
+      height: 300px; } }
 
 .img-thumbnail {
   padding: 0.25rem;

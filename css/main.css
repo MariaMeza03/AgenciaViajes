@@ -428,7 +428,20 @@ mark,
       height: 250px; } }
   @media (min-width: 1400px) {
     .img-fluid {
-      height: 280px; } }
+      height: 270px; } }
+
+.img-home {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 768px) {
+    .img-home {
+      height: 180px; } }
+  @media (min-width: 1199px) {
+    .img-home {
+      height: 250px; } }
+  @media (min-width: 1400px) {
+    .img-home {
+      height: 300px; } }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -7098,6 +7111,12 @@ h6,
 
 .cumpleaños {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cumpleaños.jpeg), no-repeat center center; }
+
+.lgbt {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/lgbt.jpg), no-repeat center center; }
+
+.five {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/+50.jpg), no-repeat center center; }
 
 .page-header {
   background-size: cover; }
