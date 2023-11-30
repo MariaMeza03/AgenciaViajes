@@ -7068,7 +7068,7 @@ h6,
   color: #BE8C29; }
 
 @media (max-width: 991.98px) {
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-light .navbar-nav .nav-link .nav-link--cumpleaños {
     padding: 10px 15px; } }
 
 @media (min-width: 992px) {
@@ -7115,8 +7115,17 @@ h6,
 .lgbt {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/lgbt.jpg), no-repeat center center; }
 
+.mujeres {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/package-6.jpg), no-repeat center center; }
+
+.teen {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/niños.jpg), no-repeat center center; }
+
 .five {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/+50.jpg), no-repeat center center; }
+
+.teen {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/niños.jpg), no-repeat center center; }
 
 .page-header {
   background-size: cover; }

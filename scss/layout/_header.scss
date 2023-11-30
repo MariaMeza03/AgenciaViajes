@@ -1,329 +1,157 @@
 .header {
-	width: 100%;
-	height: 80px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-    background: black;
-	display: flex;
-	margin-top: 20px;
-   
-      @media(min-width:1199px){
-        padding: 0 30px;
-		height: auto;
-		background: black;
-    }
-
-
-	&--show{
-		padding: 15px;
-		top: 0;
-		background: linear-gradient(90deg, $elephant); //#92d2
-	}
-
-	&--hide{
-		background: black;
-	}
-
-	@media(min-width:1199px){
-		height: auto;
-	}
-
 	
-	&__mobile {
-		width: 100%;
-		height: 100%;
-		display: block;
-
-		@media(min-width: 1200px) {
-			display: none;
-		}
-
-		.container {
-			width: 100%;
-			@include flex-center-between;
-			height: 100%;
-		}
-
-		&__logo {
-			width:80px;
-			padding-top: 15px;
-			padding-bottom: 10px;
+	&__bodas{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
 		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
 		}
 
-		&__toggle {
-			width: 43px;
-			height: 43px;
-			@include flex-center-center;
-			cursor: pointer;
-			background-color:$black;
-			border: 1px solid transparent;
-    		border-radius: 4px;
-			padding: 13px 10px;
-
-			&__bar {
-				width: 100%;
-				height: 2px;
-				background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-				position: relative;
-				transition: 0.3s;
-
-				&::before {
-					content: "";
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					top: -8px;
-					left: 0;
-					background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					transition: 0.3s;
-				}
-
-				&::after {
-					content: "";
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					bottom: -8px;
-					left: 0;
-					background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					transition: 0.3s;
-				}
-
-			}
-
+		&--active{
+			color:#c5b2a0 ;
 		}
-		
 
+		&:hover{
+			color:#c5b2a0 ;
+		}
 
 	}
 
-	&__desktop {
-		width: 100%;
-		height: 100%;
-		display: none; 
-		/*background-color: rgba(0, 0, 0, 0.45);*/
-
-		@media(min-width: 1200px) {
-			display: block;
-
-			.container-sm{
-				@include flex-center-between;
-			}
-			
+	&__cumpleaños{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
 		}
 
-		&__logo{
-			width:90px;
-			padding: 5px;
+		&--active{
+			color:#30A5B0 ;
 		}
 
-		&__pages{
-			display: flex;
-			gap: 10px;
-			font-size: 14px;
-			font-weight: 700;
-
-			@media(min-width:1440px){
-				gap: 40px;
-			}
-			
-
-			&--active{
-				color: $la_salle_green;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-			}
-
-			&--one{		
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					.header__desktop__pages--one__form{
-						opacity: 1;
-					}
-				}
-			}
-
-			&--two{
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					.header__desktop__pages--two__form{
-						opacity: 1;
-					}
-				}
-
-			}
-
-			&--three{
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					.header__desktop__pages--three__form{
-						opacity: 1;
-					}
-				}
-			}
-
-			&--four{
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					.header__desktop__pages--four__form{
-						opacity: 1;
-					}
-				}
-			}
-
-			&--five{
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					.header__desktop__pages--four__form{
-						opacity: 1;
-					}
-				}
-
-			}
-
-			&--six{
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					.header__desktop__pages--six__form{
-						opacity: 1;
-					}
-				}
-			}
-
-			&--seven{
-				color:$white;
-
-				&__form{
-					@include flex-center-center;
-					gap: 5px;
-					padding-top: 5px;
-					opacity: 0;
-
-					&__circle{
-						width: 100%;
-						height: 5px;
-						background:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-					}
-				}
-
-				&:hover{
-					color:linear-gradient(rgb(145,103,57), rgb(248,230,157),rgb(145,103,57)) ;
-
-					.header__desktop__pages--seven__form{
-						opacity: 1;
-					}
-				}
-			}
-
+		&:hover{
+			color:#30A5B0 ;
 		}
-
-
 	}
 
+	&__five{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
+		}
+
+		&--active{
+			color:#ff1902 ;
+		}
+
+		&:hover{
+			color:#ff1902 ;
+		}
+	}
+
+	&__lgbt{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
+		}
+
+		&--active{
+			color:#7f69a5 ;
+		}
+
+		&:hover{
+			color:#7f69a5 ;
+		}
+	}
+
+	&__xv{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
+		}
+
+		&--active{
+			color:#e4007c;
+		}
+
+		&:hover{
+			color:#e4007c ;
+		}
+	}
+	
+	&__mochileros{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
+		}
+
+		&--active{
+			color:#6AE751;
+		}
+
+		&:hover{
+			color:#6AE751 ;
+		}
+	}
+	
+	&__mujeres{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
+		}
+
+		&--active{
+			color:#F223D6;
+		}
+
+		&:hover{
+			color:#F223D6 ;
+		}
+	}
+
+	&__teen{
+		padding: 30px 15px;
+		color: $dark;
+		font-weight: 500;
+		outline: none;
+		
+		@media(max-width: 991.98px){
+			padding: 10px 15px;
+		}
+
+		&--active{
+			color:#5C1BBF;
+		}
+
+		&:hover{
+			color:#5C1BBF ;
+		}
+	}
+	
 
 }

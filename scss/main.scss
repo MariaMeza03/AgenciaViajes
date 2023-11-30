@@ -63,8 +63,8 @@ button{
 }
 
 a{
-	text-decoration: none;
-	transition: 0.3s;
+	text-decoration: none !important;
+	transition: 0.3s !important;
 }
 
 svg{
